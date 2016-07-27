@@ -28,10 +28,16 @@ namespace ConnectMeBot
 
                 QueryInformation queryInfo = GetQueryInformation(activity.Text);
 
-                // calculate something for us to return
-                //int length = (activity.Text ?? string.Empty).Length;
+                Activity reply = activity.CreateReply($"You sent {activity.Text}, but we don't know what that means.");
 
-                Activity reply = activity.CreateReply($"You sent {activity.Text}, and we found role {queryInfo.Role} and entity {queryInfo.Entity}, and IsWhoQuestion is: {queryInfo.IsWhoQuestion}");
+                if (queryInfo.IsHelpQuestion)
+                {
+                    reply = activity.CreateReply($"I am a bot that helps you find somebody within the company. i.e. 'Who owns OSI?'");
+                }
+                else if (queryInfo.IsWhoQuestion)
+                {
+                    reply = activity.CreateReply($"You sent {activity.Text}, and we found role {queryInfo.Role} and entity {queryInfo.Entity}, and IsWhoQuestion is: {queryInfo.IsWhoQuestion}");
+                }
 
                 // return our reply to the user
                 //Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
@@ -64,13 +70,17 @@ namespace ConnectMeBot
 
             JObject json = JObject.Parse(responseFromServer);
 
+            JObject helpData = json["intents"].Values<JObject>()
+                .Where(m => m["intent"].Value<string>() == "Help")
+                .FirstOrDefault();
+
+            queryInfo.IsHelpQuestion = (double) helpData["score"] > 0.5;
+
             JObject whoData = json["intents"].Values<JObject>()
             .Where(m => m["intent"].Value<string>() == "WhoTech")
             .FirstOrDefault();
 
-            var score = whoData["score"];
-
-            queryInfo.IsWhoQuestion = (double)score > 0.5;
+            queryInfo.IsWhoQuestion = (double) whoData["score"] > 0.5;
 
             JToken actionData = whoData["actions"].FirstOrDefault();
 

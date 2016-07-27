@@ -7,6 +7,11 @@
             get; set;
         }
 
+        public bool IsHelpQuestion
+        {
+            get; set;
+        }
+
         public string Entity
         {
             get; set;
