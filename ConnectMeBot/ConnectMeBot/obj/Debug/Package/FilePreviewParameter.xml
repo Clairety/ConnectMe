@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ConnectMeBot" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^F:\\UserDepot\\Hackathon2016\\ConnectMe\\ConnectMe\\ConnectMeBot\\ConnectMeBot\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^F:\\UserDepot\\Hackathon2016\\ConnectMe\\ConnectMe\\ConnectMeBot\\ConnectMeBot\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

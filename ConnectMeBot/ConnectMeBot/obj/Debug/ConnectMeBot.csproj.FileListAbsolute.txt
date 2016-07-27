@@ -1,0 +1,39 @@
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Bot Application1.dll.config
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Bot Application1.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Bot Application1.pdb
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Autofac.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Chronic.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Bot.Builder.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Bot.Connector.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Rest.ClientRuntime.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Newtonsoft.Json.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Net.Http.Formatting.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Web.Http.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Web.Http.WebHost.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Autofac.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Bot.Builder.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Bot.Connector.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.Rest.ClientRuntime.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Microsoft.WindowsAzure.Configuration.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\Newtonsoft.Json.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Net.Http.Formatting.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Web.Http.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\System.Web.Http.WebHost.xml
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\en\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\es\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\obj\Debug\ConnectMeBot.csprojResolveAssemblyReference.cache
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\obj\Debug\Bot Application1.dll
+F:\UserDepot\Hackathon2016\ConnectMe\ConnectMe\ConnectMeBot\ConnectMeBot\obj\Debug\Bot Application1.pdb
