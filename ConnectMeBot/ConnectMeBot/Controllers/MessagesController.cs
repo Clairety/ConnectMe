@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Collections;
 using Newtonsoft.Json.Linq;
+using ConnectMeBot.Models;
 
 namespace ConnectMeBot
 {
@@ -36,7 +37,24 @@ namespace ConnectMeBot
                 }
                 else if (queryInfo.IsWhoQuestion)
                 {
-                    reply = activity.CreateReply($"You sent {activity.Text}, and we found role {queryInfo.Role} and entity {queryInfo.Entity}, and IsWhoQuestion is: {queryInfo.IsWhoQuestion}");
+                    try
+                    {
+                        if (String.IsNullOrEmpty(queryInfo.Entity))
+                        {
+                            reply = activity.CreateReply($"We don't know about that sentence structure or technology yet.");
+                        }
+                        else
+                        {
+                            // reply = activity.CreateReply($"You sent {activity.Text}, and we found role {queryInfo.Role} and entity {queryInfo.Entity}, and IsWhoQuestion is: {queryInfo.IsWhoQuestion}");
+                            var upn = await ContactLookup.Lookup(queryInfo.Entity);
+
+                            reply = activity.CreateReply($"We think a good contact might be {upn}.");
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        reply = activity.CreateReply($"I crashed! {e.Message}");
+                    }
                 }
 
                 // return our reply to the user
