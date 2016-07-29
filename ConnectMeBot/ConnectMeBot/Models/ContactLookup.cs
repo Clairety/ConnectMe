@@ -74,10 +74,10 @@ namespace ConnectMeBot.Models
             {
                 await connection.OpenAsync();
 
-                using (var command = new SqlCommand("SELECT ObjectId, Description FROM Groups WHERE Description LIKE @Keyword", connection))
+                using (var command = new SqlCommand("SELECT ObjectId, Description FROM Groups WHERE Contains(Description, @Keyword)", connection))
                 {
                     command.Parameters.Add("Keyword", SqlDbType.NVarChar);
-                    command.Parameters["Keyword"].Value = "%" + keyword + "%";
+                    command.Parameters["Keyword"].Value = keyword;
                     using (var reader = await command.ExecuteReaderAsync())
                     {
                         while (await reader.ReadAsync())
@@ -87,7 +87,7 @@ namespace ConnectMeBot.Models
                     }
                 }
             }
-            return groups.Where(g => (g.Item2 != null && Regex.IsMatch(g.Item2, @"\b" + keyword + @"\b", RegexOptions.IgnoreCase))).Select(g => g.Item1);
+            return groups.Where(g => (g.Item2 != null)).Select(g => g.Item1);
         }
     }
 }
