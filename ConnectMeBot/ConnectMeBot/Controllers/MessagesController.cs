@@ -48,7 +48,7 @@ namespace ConnectMeBot
                             // reply = activity.CreateReply($"You sent {activity.Text}, and we found role {queryInfo.Role} and entity {queryInfo.Entity}, and IsWhoQuestion is: {queryInfo.IsWhoQuestion}");
                             var upn = await ContactLookup.Lookup(queryInfo.Entity);
 
-                            reply = activity.CreateReply($"We think a good contact might be {upn}.");
+                            reply = activity.CreateReply($"I think a good contact might be {upn}.");
                         }
                     }
                     catch (Exception e)
