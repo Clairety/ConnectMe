@@ -26,7 +26,7 @@ namespace ConnectMeBot.Models
             {
                 var result = authContext.AcquireTokenAsync("https://graph.windows.net", clientCredential).Result;
                 return result.AccessToken;
-            });
+            }, true);
 
             string authenticationAuthority = string.Format(
                     CultureInfo.InvariantCulture,
@@ -49,11 +49,23 @@ namespace ConnectMeBot.Models
             foreach (var objectId in objectIds)
             {
                 tasks.Add(activeDirectoryClient.Groups.GetByObjectId(objectId.ToString()).Members.ExecuteAsync());
-            };
+            }
 
-            Task.WaitAll(tasks.ToArray());
+            try
+            {
+                Task.WaitAll(tasks.ToArray(), TimeSpan.FromSeconds(30));
+            }
+            catch(AggregateException)
+            {
+                // Yay hackathon!
+            }
 
-            foreach (var task in tasks)
+            if (!tasks.Any(t => t.IsCompleted && !t.IsFaulted))
+            {
+                return "beyond my ability to determine right now.";
+            }
+
+            foreach (var task in tasks.Where(t => t.IsCompleted && !t.IsFaulted))
             {
                 users.AddRange(task.Result.CurrentPage.Where(o => o.ObjectType == "User"));
             }
